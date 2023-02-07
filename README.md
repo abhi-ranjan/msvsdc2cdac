@@ -58,4 +58,21 @@ $ xschem
 
 ```
 // Go to file -----> New symbol
-// then create so symbol pins using symbol ----> 
+// then create so symbol pins using symbol ----> Place symbol pins
+// then rename the pins as per the pins we have in schematic (use q to edit properties of pin)
+// We can change the snapping gird at the bottom left cornor. Set grid = 5 and Display = 2.
+// G key cuts the grid in half. Shift + g to go up by factor of 2.
+// We do need to need configure the global properties of the symbol. So hit the q key with nothing selected, we get a text box we get a text box which comes out to configure the global properties of the symbol. The the following in the text box
+type=subcircuit
+format=*@name @pinlist @symname*
+template=*name=X1*  (X is the SPICE reference designator prefix for sub-circuits and 1 is just a default number, but if there is another x1 some place in the scematic then it will automatically generate some othe value. 
+
+![image](https://user-images.githubusercontent.com/69652104/217360903-6501a71e-a72c-4e1a-979c-f70bdf7be06d.png)
+
+```
+
+- Creating testbench using the created symbol.
+
+```
+// inserte the symbol
+// put propper power supply 
