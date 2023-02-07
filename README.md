@@ -23,7 +23,12 @@ $ cp /usr/local/share/pdk/sky130A/libs.tech/netgen//sky130A_setup.tcl .
 Checking if magic works:
 
 
-### Making inverter
+### Making inverter using xschem 
+
+- Schematic
+Schematic using different component of open pdk of skywater 130 can be made using xschem software. We can also edit the dimensions and properties of the components. 
+
+![image](https://user-images.githubusercontent.com/69652104/217327517-25763a71-42e4-4ada-a5ff-a4f19cc7eb93.png)
 
 ```
 // shortcuts
@@ -47,3 +52,10 @@ $ xschem
 // ipin.sym for input pin
 // iopin.sym for power supply connection
 // opin.sym for output pin
+```
+
+- Schematic to symbol
+
+```
+// Go to file -----> New symbol
+// then create so symbol pins using symbol ----> 
