@@ -74,9 +74,13 @@ OR
 
 ![image](https://user-images.githubusercontent.com/69652104/217360903-6501a71e-a72c-4e1a-979c-f70bdf7be06d.png)
 
+OR alternatively
+
+![image](https://user-images.githubusercontent.com/69652104/217443799-70e6c6fd-81c9-4a2a-b080-364e88a8c84f.png)
 
 - Creating testbench using the created symbol.
 
 ```
+// create new schematic
 // inserte the symbol
-// put propper power supply 
+// put propper power supply from tools ----> devices ----> vsource  (right half of the box)
