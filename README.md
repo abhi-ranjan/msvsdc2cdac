@@ -84,3 +84,15 @@ OR alternatively
 // create new schematic
 // inserte the symbol
 // put propper power supply from tools ----> devices ----> vsource  (right half of the box)
+
+
+
+
+
+
+
+
+
+
+
+![image](https://user-images.githubusercontent.com/69652104/217553031-1bceeb97-e5c6-4313-bb83-d8620238b64d.png)
