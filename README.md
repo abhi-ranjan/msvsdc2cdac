@@ -67,9 +67,13 @@ type=subcircuit
 format=*@name @pinlist @symname*
 template=*name=X1*  (X is the SPICE reference designator prefix for sub-circuits and 1 is just a default number, but if there is another x1 some place in the scematic then it will automatically generate some othe value. 
 
+OR
+
+// Alternatively select make symbol from schematic from the drop down after clicking symbol in the menu. 
+```
+
 ![image](https://user-images.githubusercontent.com/69652104/217360903-6501a71e-a72c-4e1a-979c-f70bdf7be06d.png)
 
-```
 
 - Creating testbench using the created symbol.
 
