@@ -6,7 +6,7 @@
 | S. No.    | Week|Day|Action Item|
 |----------|-----|--------|-------|
 |1.||1|Install Magic, ngspice and SKY130 PDKs|
-|2.||2|Install ALIGN tool|
+<!-- |2.||2|Install ALIGN tool| -->
 |3.||3|Create inverter and perform pre-layout using xschem or ngspice|
 |5.||3|Inverter Post-layout characterization using 2)|
 |6.||4|Inverter post-layout characterization using 3)|
