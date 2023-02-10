@@ -3,7 +3,7 @@
 
 
 # msvsd8tsram
-| S. No.    | Week|Day|Action Item|
+| S. No.    | Week|Day|TASK|
 |----------|-----|--------|-------|
 |1.||1|Install Magic, ngspice and SKY130 PDKs|
 |2.||2|Install ALIGN tool|
