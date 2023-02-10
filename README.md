@@ -5,7 +5,7 @@
 * [Week 0](#week-0)
      - [Software Installation](#software-installation)
      - [Verifying softwares](#verifying-softwares)
-     - [Create inverter and perform pre-layout using xschem or ngspice](#create-inverter-and-perform-pre-layout-using-xschem-or-ngspice)
+     - [Create inverter and perform pre-layout using xschem or ngspice](#create-inverter-and-perform-pre---layout-using-xschem-or-ngspice)
 
 
 | S. No.    | Week|Day|TASK|
