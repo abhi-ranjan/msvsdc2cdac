@@ -9,8 +9,7 @@
 
 | S. No.    | Week|Day|TASK|
 |----------|-----|--------|-------|
-|1.||1|Install Magic, ngspice and SKY130 PDKs|
-|2.||2|Install ALIGN tool|
+
 |3.||3|Create inverter and perform pre-layout using xschem or ngspice|
 |5.||3|Inverter Post-layout characterization using 2)|
 |6.||4|Inverter post-layout characterization using 3)|
@@ -24,6 +23,9 @@
 ---
 As a preparation for the work, we are going to install the following software in Ubuntu 20.04. I created the scripts in the following numbered order, it is best if they are run in the same order.
 
+| S. No.   |Day|TASK|
+| --- | --- | ---|
+|1.   | 1 | Installing Softwares | 
 ## Software Installation
 
 |S. No.	|Software|	Description|
