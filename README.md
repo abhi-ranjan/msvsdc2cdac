@@ -239,7 +239,6 @@ $ cp /usr/local/share/pdk/sky130A/libs.tech/netgen//sky130A_setup.tcl .
 - Schematic
 Schematic using different component of open pdk of skywater 130 can be made using xschem software. We can also edit the dimensions and properties of the components. 
 
-![image](https://user-images.githubusercontent.com/69652104/217327517-25763a71-42e4-4ada-a5ff-a4f19cc7eb93.png)
 
 ```
 // shortcuts
@@ -265,6 +264,8 @@ $ xschem
 // opin.sym for output pin
 ```
 
+![image](https://user-images.githubusercontent.com/69652104/218216287-86963afb-1873-423f-a9de-211fc5b76731.png)
+
 - Schematic to symbol
 
 ```
@@ -289,12 +290,22 @@ OR alternatively
 
 ![image](https://user-images.githubusercontent.com/69652104/217443799-70e6c6fd-81c9-4a2a-b080-364e88a8c84f.png)
 
-- Creating testbench using the created symbol.
+- Creating testbench using the created symbol and running simulations.
 
 ```
 // create new schematic
 // inserte the symbol
 // put propper power supply from tools ----> devices ----> vsource  (right half of the box)
-// Then click on the netlist button on the top right cornor to generate netlist and then run the simulation.
+// Then click on the netlist button on the top right cornor to generate netlist and then run the simulation. (testbench.spice)
 // The generated netlist file is in home ----> .xschem ----> simulation
 // Also keep .spiceinit file here before running simulation.
+
+#### Testbench
+
+![image](https://user-images.githubusercontent.com/69652104/218216591-a701a642-fc32-4335-815d-6ba23ffcf76d.png)
+
+#### Simulation
+
+![image](https://user-images.githubusercontent.com/69652104/218217065-93d92a23-a1ec-4bed-9a7c-38ab3e501763.png)
+
+**NOTE:** - Make sure you generate netlist of schematic and testbench.
