@@ -218,8 +218,21 @@ $ cd ../netgen
 $ cp /usr/local/share/pdk/sky130A/libs.tech/netgen//sky130A_setup.tcl .
 ```
 
-Checking if magic works:
+#### Checking if magic works
 
+![Screenshot from 2023-02-06 01-53-29](https://user-images.githubusercontent.com/69652104/218209970-bbcd2c81-37fe-416d-93be-60dd058c54c5.png)
+
+#### Checking if xschem works
+
+![Screenshot from 2023-02-06 01-55-07](https://user-images.githubusercontent.com/69652104/218210133-09f1d119-e115-4376-aafd-b56fe43a0c07.png)
+
+#### Checking if netgen works
+
+![Screenshot from 2023-02-06 01-56-23](https://user-images.githubusercontent.com/69652104/218210544-b5ae11c4-82b2-4fc8-a8cc-da1a985ca0de.png)
+
+#### Checking if ngspice works
+
+![Screenshot from 2023-02-06 01-57-25](https://user-images.githubusercontent.com/69652104/218210788-0c03d608-8285-4944-befc-8f73fe042269.png)
 
 ### Making inverter using xschem 
 
