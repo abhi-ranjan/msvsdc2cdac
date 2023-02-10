@@ -317,6 +317,7 @@ Finding the timing parameters help us to characterise INVERTER. Characterisation
 
 1. Rise transiton - time taken by output waveform to transit from 20% to 80% of VDD = 80% value (1.44) - 20% value (0.36) = 6.600ns - 6.525 ns = 75 ps
 2. fall transition - time taken by output waveform to transit from 80% (1.44) to 20% (0.36) of VDD = 20% value (0.36) - 80% value (1.44) = 11.5405ns - 11.4787ns = 0.0618ns = 61.8ps
+
 3 & 4. Propagation delay - The difference between the time when output as well as input is at 50% (1.65). ( o/p falls and i/p rises gives fall delay, o/p rises and i/p falls gives us the rise delay)
 
 - Fall delay:
