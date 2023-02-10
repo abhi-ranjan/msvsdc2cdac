@@ -325,8 +325,7 @@ Therefore delay = output falling (50%) - input rising (50%) = 11.5129 - 11.5000 
 Therefore delay = output rising (50%) - input falling (50%) = 16.5652 - 16.5011 = 0.0641ns = 64.1 ps.
 
 ## Refrences 
-## References
 
-[Magic](http://opencircuitdesign.com/magic/)
-[Open_pdks](http://opencircuitdesign.com/open_pdks/)
-[xschem](https://xschem.sourceforge.io/stefan/xschem_man/xschem_man.html)
+1. [Magic](http://opencircuitdesign.com/magic/)
+2. [Open_pdks](http://opencircuitdesign.com/open_pdks/)
+3. [xschem](https://xschem.sourceforge.io/stefan/xschem_man/xschem_man.html)
