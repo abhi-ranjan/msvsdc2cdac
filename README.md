@@ -299,6 +299,7 @@ OR alternatively
 // Then click on the netlist button on the top right cornor to generate netlist and then run the simulation. (testbench.spice)
 // The generated netlist file is in home ----> .xschem ----> simulation
 // Also keep .spiceinit file here before running simulation.
+```
 
 #### Testbench
 
