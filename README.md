@@ -26,6 +26,8 @@ As a preparation for the work, we are going to install the following software in
 | S. No.   |Day|TASK|
 | --- | --- | ---|
 |1.   | 1 | Installing Softwares | 
+|2.   | 2 | Create inverter and perform pre-layout using xschem or ngspice | 
+
 ## Software Installation
 
 |S. No.	|Software|	Description|
