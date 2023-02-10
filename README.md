@@ -1,5 +1,22 @@
 # Checking the installed softwares
 ## Verifiying the open_pdk installation
+
+
+# msvsd8tsram
+| S. No.    | Week|Day|Action Item|
+|----------|-----|--------|-------|
+|1.||1|Install Magic, ngspice and SKY130 PDKs|
+|2.||2|Install ALIGN tool|
+|3.||3|Create inverter and perform pre-layout using xschem or ngspice|
+|5.||3|Inverter Post-layout characterization using 2)|
+|6.||4|Inverter post-layout characterization using 3)|
+|7.||4|Compare the results obtained in 5) and 6) |
+|8.||5|Enroll in FREE VSD-custom layout course |
+|9.||6|Create the design shown in section 7 of the course and perform pre-layout using xschem or ngspice|
+|10.||6|Post layout characterization using 2) and 3)||
+|11.||6|Update your findings on your GitHub repo with the title “Week 0”|
+
+
 ### Making initial directory
 
 ```
@@ -84,15 +101,6 @@ OR alternatively
 // create new schematic
 // inserte the symbol
 // put propper power supply from tools ----> devices ----> vsource  (right half of the box)
-
-
-
-
-
-
-
-
-
-
-
-![image](https://user-images.githubusercontent.com/69652104/217553031-1bceeb97-e5c6-4313-bb83-d8620238b64d.png)
+// Then click on the netlist button on the top right cornor to generate netlist and then run the simulation.
+// The generated netlist file is in home ----> .xschem ----> simulation
+// Also keep .spiceinit file here before running simulation.
