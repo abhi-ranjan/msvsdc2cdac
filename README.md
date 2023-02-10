@@ -305,8 +305,28 @@ OR alternatively
 
 ![image](https://user-images.githubusercontent.com/69652104/218216591-a701a642-fc32-4335-815d-6ba23ffcf76d.png)
 
-#### Simulation
+#### Simulation (transient)
 
 ![image](https://user-images.githubusercontent.com/69652104/218217065-93d92a23-a1ec-4bed-9a7c-38ab3e501763.png)
 
 **NOTE:** - Make sure you generate netlist of schematic and testbench.
+
+#### Characterisation of INVERTER
+
+Finding the timing parameters help us to characterise INVERTER. Characterisation involves four parameters:
+
+1. Rise transiton - time taken by output waveform to transit from 20% to 80% of VDD = 80% value (1.44) - 20% value (0.36) = 6.600ns - 6.525 ns = 75 ps
+2. fall transition - time taken by output waveform to transit from 80% (1.44) to 20% (0.36) of VDD = 20% value (0.36) - 80% value (1.44) = 11.5405ns - 11.4787ns = 0.0618ns = 61.8ps
+3 & 4. Propagation delay - The difference between the time when output as well as input is at 50% (1.65). ( o/p falls and i/p rises gives fall delay, o/p rises and i/p falls gives us the rise delay)
+
+- Fall delay:
+Therefore delay = output falling (50%) - input rising (50%) = 11.5129 - 11.5000 = 0.0129ns = 12.9 ps.
+- Rise delay:
+Therefore delay = output rising (50%) - input falling (50%) = 16.5652 - 16.5011 = 0.0641ns = 64.1 ps.
+
+## Refrences 
+## References
+
+[Magic](http://opencircuitdesign.com/magic/)
+[Open_pdks](http://opencircuitdesign.com/open_pdks/)
+[xschem](https://xschem.sourceforge.io/stefan/xschem_man/xschem_man.html)
