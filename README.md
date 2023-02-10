@@ -4,6 +4,7 @@
 
 * [Week 0](#week-0)
      - [Software Installation](#Software-Installation)
+     - [Verifying softwares](#verifying-softwares)
      - [Create inverter and perform pre-layout using xschem or ngspice](#Create-inverter-and-perform-pre-layout-using-xschem-or-ngspice)
 
 
@@ -187,9 +188,7 @@ cd ~/software/ALIGN-public
 
 git clone https://github.com/ALIGN-analoglayout/ALIGN-pdk-sky130
 ```
-- If faced this error 
-![Screenshot (2367)](https://user-images.githubusercontent.com/120498080/217863997-011b9abe-ec8c-4bce-9721-8f49fa598f7e.png)
-- Solution
+
 ```
 # First update setuptools
 pip install -U setuptools
@@ -197,6 +196,7 @@ pip install -U setuptools
 pip install python-dotenv
 ```
 
+## Verifying softwares
 
 ### Making initial directory
 
