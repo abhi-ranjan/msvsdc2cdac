@@ -15,7 +15,7 @@ As a preparation for the work, we are going to install the following software in
 | --- | --- | ---|
 |1.   | 1 | Installing Softwares | 
 |2.   | 2 | Create inverter and perform pre-layout using xschem or ngspice | 
-|3.   | 3 | Inverter Post-layout characterization using 2) |
+|3.   | 3 | Inverter Post-layout characterization using magic |
 ## Software Installation
 
 |S. No.	|Software|	Description|
