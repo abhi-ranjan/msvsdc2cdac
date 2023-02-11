@@ -146,6 +146,8 @@ git clone https://github.com/ALIGN-analoglayout/ALIGN-public
 cd ALIGN-public
 
 # Install virtual environment for python
+sudo add-apt-repository ppa:deadsnakes/ppa   
+sudo apt-get update 
 sudo apt -y install python3.8-venv
 
 # Install the latest pip
@@ -158,6 +160,7 @@ source general/bin/activate
 
 python3 -m pip install pip --upgrade
 
+pip install aling
 pip install pandas
 pip install scipy
 pip install nltk
