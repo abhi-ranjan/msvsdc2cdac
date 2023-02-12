@@ -315,6 +315,25 @@ Therefore delay = output falling (50%) - input rising (50%) = 11.5129 - 11.5000 
 - Rise delay:
 Therefore delay = output rising (50%) - input falling (50%) = 16.5652 - 16.5011 = 0.0641ns = 64.1 ps.
 
+#### Inverter Post-layout characterization using magic
+
+In the mag directory put the following files: 1. `sky130A.tech` , 2. `.magicrc` , 3. `sky130A.magicrc`  and then invoke the magic tool using the following command.
+
+```
+magic -d XR
+```
+STEPS TO FOLLOW:
+
+1. The command opens toplevel ,agic layout window and the tkon window. Now we can import the generated .spice file (go to file ----> Import SPICE) and then select the appropriate SPICE file. (for me inverter1.spice from the following location home ---> .xschem ---> simulation or from the xschem directory (\\only if you have pasted it there)).
+
+2. After importing the spice, an epty layout window is available. Move the cursor over the cell and press 's', then press 'x'.
+
+3. If step 2 doesn't works then press 'x' and after taht press 'v'.
+
+![gnome-shell-screenshot-agm275](https://user-images.githubusercontent.com/69652104/218338520-54fabda9-a68e-4ea7-b595-b1a9fca89765.png)
+
+4.  
+
 ## Refrences 
 
 1. [Magic](http://opencircuitdesign.com/magic/)
