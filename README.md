@@ -332,7 +332,10 @@ STEPS TO FOLLOW:
 
 ![gnome-shell-screenshot-agm275](https://user-images.githubusercontent.com/69652104/218338520-54fabda9-a68e-4ea7-b595-b1a9fca89765.png)
 
-4.  
+
+#### Inverter Post-layout characterization using magic
+
+
 
 ## Refrences 
 
