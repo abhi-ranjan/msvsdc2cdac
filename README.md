@@ -1,4 +1,6 @@
-# msvsdc2cdac
+ext2spice lvs
+ext2spice cthresh 0 rthresh 0
+ext2spice# msvsdc2cdac
 
 ## *INDEX*
 
@@ -356,6 +358,76 @@ ext2spice
 ```
 
 The following commands create .ext,.mag and .spice files. Now the generated spice file is merged with the spice file created before i.e., during the simulation using xschem.
+
+* SPICE file generated after xschem i.e., simulation. 
+```
+** sch_path: /home/abhishek/Desktop/VSD/LABS/Week_0 _1/INVERTER/xschem/inverter1.sch
+**.subckt inverter1 vdd vss vin vout
+*.iopin vdd
+*.iopin vss
+*.ipin vin
+*.opin vout
+XM1 vout vin vss vss sky130_fd_pr__nfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 vout vin vdd vdd sky130_fd_pr__pfet_01v8 L=0.15 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+**.ends
+.end
+```
+
+* SPICE file generated after layout extraction.
+```
+* NGSPICE file created from inverter1.ext - technology: sky130A
+
+.subckt sky130_fd_pr__nfet_01v8_ATLS57 a_15_n200# a_n175_n374# a_n73_n200# a_n33_n288#
+X0 a_15_n200# a_n33_n288# a_n73_n200# a_n175_n374# sky130_fd_pr__nfet_01v8 ad=5.8e+11p pd=4.58e+06u as=5.8e+11p ps=4.58e+06u w=2e+06u l=150000u
+C0 a_n73_n200# a_15_n200# 0.32fF
+C1 a_n33_n288# a_15_n200# 0.03fF
+C2 a_n33_n288# a_n73_n200# 0.03fF
+C3 a_15_n200# a_n175_n374# 0.16fF
+C4 a_n73_n200# a_n175_n374# 0.21fF
+C5 a_n33_n288# a_n175_n374# 0.30fF
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_XGASDL a_n73_n400# a_15_n400# w_n211_n619# a_n33_n497#
++ VSUBS
+X0 a_15_n400# a_n33_n497# a_n73_n400# w_n211_n619# sky130_fd_pr__pfet_01v8 ad=1.16e+12p pd=8.58e+06u as=1.16e+12p ps=8.58e+06u w=4e+06u l=150000u
+C0 a_15_n400# a_n73_n400# 0.64fF
+C1 a_n33_n497# a_n73_n400# 0.04fF
+C2 w_n211_n619# a_n73_n400# 0.27fF
+C3 a_n33_n497# a_15_n400# 0.04fF
+C4 w_n211_n619# a_15_n400# 0.17fF
+C5 w_n211_n619# a_n33_n497# 0.26fF
+C6 a_15_n400# VSUBS 0.14fF
+C7 a_n73_n400# VSUBS 0.14fF
+C8 a_n33_n497# VSUBS 0.06fF
+C9 w_n211_n619# VSUBS 2.02fF
+.ends
+
+.subckt inverter1 vdd vin vout vss
+XXM1 vout VSUBS vss vin sky130_fd_pr__nfet_01v8_ATLS57
+XXM2 vdd vout XM2/w_n211_n619# vin VSUBS sky130_fd_pr__pfet_01v8_XGASDL
+C0 vdd XM2/w_n211_n619# 0.13fF
+C1 vin XM2/w_n211_n619# 0.09fF
+C2 vdd vout 0.00fF
+C3 vin vout 0.04fF
+C4 vdd vin 0.16fF
+C5 XM2/w_n211_n619# vss 0.00fF
+C6 vss vout 0.01fF
+C7 vin vss 0.26fF
+C8 XM2/w_n211_n619# vout 0.13fF
+C9 vin VSUBS 0.39fF
+C10 vdd VSUBS 1.15fF
+C11 XM2/w_n211_n619# VSUBS 2.06fF
+C12 vout VSUBS 1.18fF
+C13 vss VSUBS 1.14fF
+.ends
+```
+
+* Merge the above files and make and run the SPICE file using ngspice.
+
 
 #### Inverter Post-layout characterization using magic
 
