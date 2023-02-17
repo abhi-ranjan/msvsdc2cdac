@@ -310,7 +310,7 @@ Finding the timing parameters help us to characterise INVERTER. Characterisation
 1. Rise transiton - time taken by output waveform to transit from 20% to 80% of VDD = 80% value (1.44) - 20% value (0.36) = 6.600ns - 6.525 ns = 75 ps
 2. fall transition - time taken by output waveform to transit from 80% (1.44) to 20% (0.36) of VDD = 20% value (0.36) - 80% value (1.44) = 11.5405ns - 11.4787ns = 0.0618ns = 61.8ps
 
-3 & 4. Propagation delay - The difference between the time when output as well as input is at 50% (1.65). ( o/p falls and i/p rises gives fall delay, o/p rises and i/p falls gives us the rise delay)
+3 & 4. Propagation delay - The difference between the time when output as well as input is at 50% (0.90). ( o/p falls and i/p rises gives fall delay, o/p rises and i/p falls gives us the rise delay)
 
 - Fall delay:
 Therefore delay = output falling (50%) - input rising (50%) = 11.5129 - 11.5000 = 0.0129ns = 12.9 ps.
@@ -437,9 +437,19 @@ The generated waveform is:
 
 ![image](https://user-images.githubusercontent.com/69652104/219674333-1eb6af6a-0e83-410c-854b-a46c930710fa.png)
 
-
-
 #### Inverter Post-layout characterization using magic
+
+Finding the timing parameters help us to characterise INVERTER. Characterisation involves four parameters:
+
+1. Rise transiton - time taken by output waveform to transit from 20% to 80% of VDD = 80% value (1.44) - 20% value (0.36) = 6.598ns - 6.528 ns = 70 ps
+2. fall transition - time taken by output waveform to transit from 80% (1.44) to 20% (0.36) of VDD = 20% value (0.36) - 80% value (1.44) = 11.5396ns - 11.4797ns = 0.0618ns = 59.9 ps
+
+3 & 4. Propagation delay - The difference between the time when output as well as input is at 50% (0.90). ( o/p falls and i/p rises gives fall delay, o/p rises and i/p falls gives us the rise delay)
+
+- Fall delay:
+Therefore delay = output falling (50%) - input rising (50%) = 11.5122 - 11.5007 = 0.0129ns = 11.5 ps.
+- Rise delay:
+Therefore delay = output rising (50%) - input falling (50%) = 6.5651 - 6.5013 = 0.0641ns = 63.7 ps.
 
 
 ## Refrences 
