@@ -426,7 +426,17 @@ C13 vss VSUBS 1.14fF
 .ends
 ```
 
-* Merge the above files and make and run the SPICE file using ngspice.
+* Merge the above files and make and run the SPICE file using ngspice. The following command is used to run the spice simulation.
+```
+ngspice inverter1.spice
+```
+
+![image](https://user-images.githubusercontent.com/69652104/219674013-45a1698d-0ee2-4394-9a67-4c10e1f67d93.png)
+
+The generated waveform is:
+
+![image](https://user-images.githubusercontent.com/69652104/219674333-1eb6af6a-0e83-410c-854b-a46c930710fa.png)
+
 
 
 #### Inverter Post-layout characterization using magic
