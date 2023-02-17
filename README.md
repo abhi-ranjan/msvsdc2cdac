@@ -322,19 +322,42 @@ In the mag directory put the following files: 1. `sky130A.tech` , 2. `.magicrc` 
 ```
 magic -d XR
 ```
+This opens up the tkcon and layout windows. 
+
 STEPS TO FOLLOW:
 
-1. The command opens toplevel ,agic layout window and the tkon window. Now we can import the generated .spice file (go to file ----> Import SPICE) and then select the appropriate SPICE file. (for me inverter1.spice from the following location home ---> .xschem ---> simulation or from the xschem directory (\\only if you have pasted it there)).
+1. The command opens toplevel ,agic layout window and the tkon window. Now we can import the generated .spice file (go to file ----> Import SPICE) and then select the appropriate SPICE file. (for me inverter1.spice from the following location home ---> .xschem ---> simulation or from the xschem directory (\\only if you have pasted it there)). Once you invoke the tool then make the layout of the inveter by importing the testbench (import the SPICE file which has pins and fets)
 
 2. After importing the spice, an epty layout window is available. Move the cursor over the cell and press 's', then press 'x'.
 
-3. If step 2 doesn't works then press 'x' and after taht press 'v'.
+3. If step 2 doesn't works then press 's' and after taht press 'v'.
 
 ![gnome-shell-screenshot-agm275](https://user-images.githubusercontent.com/69652104/218338520-54fabda9-a68e-4ea7-b595-b1a9fca89765.png)
 
+4. Now make all the connections and completely the layout as shown below.
+
+![image](https://user-images.githubusercontent.com/69652104/219659885-7a858458-7721-4295-87ce-759d746598a0.png)
+
+Now save the magic file then and select autowrite. It generate number fo file which can be found in the mag folder.
+
+After saving successfully execute the following commands in the tkcon window to extract the SPICE files.
+
+```
+extract do local
+extract all
+```
+
+The above commands perform all the extractions and creates the files in the local directory and extract all do the actual extraction. Then extract the SPICE files, the following command are used to generate the SPICE files. 
+
+```
+ext2spice lvs
+ext2spice cthresh 0 rthresh 0
+ext2spice
+```
+
+The following commands create .ext,.mag and .spice files. Now the generated spice file is merged with the spice file created before i.e., during the simulation using xschem.
 
 #### Inverter Post-layout characterization using magic
-
 
 
 ## Refrences 
